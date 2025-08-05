@@ -22,7 +22,7 @@ class VideoTransformer(VideoTransformerBase):
         image = frame.to_ndarray(format="bgr24")
 
         # 객체 탐지
-        results = model.predict(image, conf=0.1)
+        results = model.predict(image, conf=0.5)
 
         # 결과 처리
         for result in results:
