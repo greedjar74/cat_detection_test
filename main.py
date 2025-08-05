@@ -6,7 +6,7 @@ from streamlit_webrtc import VideoTransformerBase, webrtc_streamer
 from ultralytics import YOLO
 
 # YOLO 모델 로드
-model = YOLO('/Users/kimhongseok/cat_detection_test/best.pt')
+model = YOLO('best.pt')
 
 # Streamlit UI 설정
 st.title("📸 실시간 고양이 탐지 - YOLO + Streamlit")
